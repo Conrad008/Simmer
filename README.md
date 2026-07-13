@@ -1,7 +1,6 @@
 ## Simmer | Recipe planner
 
- **Simmer** is a recipe browsing and weekly meal planning app. Discover recipes, save your favorites, build out a week of meals, and get an auto-generated shopping list for everything you'll need.
-
+ **Simmer** is a recipe browsing and weekly meal planning app. Discover recipes, save your favorites and  build out a week of meals
 ## Project Overview
 
  Built as a final project to demonstrate React fundamentals: component composition, client-side routing, derived state, and persistence without a backend.It demonstrates key components of REACT such as use of Hooks, Fetching of data from APIs, and use of components libraries.
