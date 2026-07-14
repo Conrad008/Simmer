@@ -6,20 +6,32 @@ import { Input } from "@/components/ui/input";
 import { useAuth } from "@/context/AuthContext";
 
 const getFriendlyAuthError = (code) => {
-  switch (code) {
-    case "auth/invalid-email":
-      return "That email address doesn't look right.";
-    case "auth/user-not-found":
-    case "auth/wrong-password":
-    case "auth/invalid-credential":
-      return "Incorrect email or password. Please try again.";
-    case "auth/too-many-requests":
-      return "Too many attempts. Please wait a moment and try again.";
-    case "auth/user-disabled":
-      return "This account has been disabled. Contact support for help.";
-    case "auth/network-request-failed":
-      return "Network error. Check your connection and try again.";
-    default:
-      return null;
-  }
+    switch (code) {
+        case "auth/invalid-email":
+            return "That email address doesn't look right.";
+        case "auth/user-not-found":
+        case "auth/wrong-password":
+        case "auth/invalid-credential":
+            return "Incorrect email or password. Please try again.";
+        case "auth/too-many-requests":
+            return "Too many attempts. Please wait a moment and try again.";
+        case "auth/user-disabled":
+            return "This account has been disabled. Contact support for help.";
+        case "auth/network-request-failed":
+            return "Network error. Check your connection and try again.";
+        default:
+            return null;
+    }
+};
+
+export default function Login() {
+    const navigate = useNavigate();
+    const { login, loginWithGoogle } = useAuth();
+
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const [showPassword, setShowPassword] = useState(false);
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [isGoogleSubmitting, setIsGoogleSubmitting] = useState(false);
+    const [error, setError] = useState("");
 }
