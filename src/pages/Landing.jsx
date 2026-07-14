@@ -68,6 +68,17 @@ export default function Landing() {
 
                     </div>
                 </div>
+
+                <div className="relative order-first lg:order-last">
+                    <div className="overflow-hidden rounded-[2rem] shadow-xl dark:shadow-black/40">
+                        <img
+                            src="https://images.unsplash.com/photo-1495521821757-a1efb6729352?w=900&q=80"
+                            alt="A warm, home-cooked meal ready to be served"
+                            className="aspect-[4/3] w-full object-cover"
+                        />
+
+                    </div>
+                </div>
             </div>
 
         </section>
