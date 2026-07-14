@@ -34,4 +34,28 @@ export default function Login() {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [isGoogleSubmitting, setIsGoogleSubmitting] = useState(false);
     const [error, setError] = useState("");
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        if (!email || !password) {
+            setError("Please enter both your email and password.");
+            return;
+        }
+
+        setError("");
+        setIsSubmitting(true);
+        try {
+            await login(email, password);
+            navigate("/recipes");
+        } catch (err) {
+            setError(
+                getFriendlyAuthError(err?.code) ||
+                err?.message ||
+                "We couldn't log you in. Please try again."
+            );
+        } finally {
+            setIsSubmitting(false);
+        }
+    };
 }
