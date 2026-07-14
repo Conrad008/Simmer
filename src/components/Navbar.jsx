@@ -11,3 +11,11 @@ const navLinks = [
   { to: "/favorites", label: "Favorites", icon: Heart },
 ];
 
+export default function Navbar() {
+    const { theme, toggleTheme } = useContext(ThemeContext);
+    const { user, isAuthenticated, logout } = useAuth();
+    const [mobileOpen, setMobileOpen] = useState(false);
+
+
+
+}
