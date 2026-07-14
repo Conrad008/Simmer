@@ -59,6 +59,26 @@ export default function Login() {
         }
     };
 
+    const handleGoogleSignIn = async () => {
+        setError("");
+        setIsGoogleSubmitting(true);
+        try {
+            await loginWithGoogle();
+            navigate("/recipes");
+        } catch (err) {
+            if (err?.code !== "auth/popup-closed-by-user") {
+                setError(
+                    getFriendlyAuthError(err?.code) ||
+                    err?.message ||
+                    "We couldn't sign you in with Google. Please try again."
+                );
+            }
+        } finally {
+            setIsGoogleSubmitting(false);
+        }
+    };
+
+
     return (
         <div className="flex min-h-screen flex-col bg-ivory dark:bg-obsidian">
             <header className="sticky top-0 z-50 flex w-full items-center justify-center bg-ivory px-5 py-4 dark:bg-obsidian">
@@ -165,6 +185,43 @@ export default function Login() {
                             </Button>
                         </form>
 
+                        <div className="my-8 flex items-center">
+                            <div className="flex-grow border-t border-olive/20 dark:border-ivory/10" />
+                            <span className="mx-3 text-xs font-semibold uppercase tracking-widest text-obsidian/40 dark:text-ivory/40">
+                                or
+                            </span>
+                            <div className="flex-grow border-t border-olive/20 dark:border-ivory/10" />
+                        </div>
+
+                        <button
+                            type="button"
+                            onClick={handleGoogleSignIn}
+                            disabled={isSubmitting || isGoogleSubmitting}
+                            className="flex w-full items-center justify-center gap-3 rounded-lg border border-olive/20 bg-white py-3 transition-all hover:bg-obsidian/[0.03] active:scale-[0.98] disabled:opacity-70 dark:border-ivory/10 dark:bg-ivory/5 dark:hover:bg-ivory/10"
+                        >
+                            {isGoogleSubmitting ? (
+                                <>
+                                    <Loader2 className="h-4 w-4 animate-spin text-obsidian dark:text-ivory" />
+                                    <span className="text-sm text-obsidian dark:text-ivory">Signing in...</span>
+                                </>
+                            ) : (
+                                <>
+                                    <span className="text-sm text-obsidian dark:text-ivory">Sign in with Google</span>
+                                </>
+                            )}
+                        </button>
+
+                        <div className="mt-10 text-center">
+                            <p className="text-sm text-obsidian/70 dark:text-ivory/70">
+                                Don't have an account?{" "}
+                                <Link
+                                    to="/register"
+                                    className="font-bold text-tomato underline-offset-4 hover:underline"
+                                >
+                                    Sign up
+                                </Link>
+                            </p>
+                        </div>
 
                     </div>
                 </section>
