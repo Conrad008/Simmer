@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { ChefHat, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -14,28 +14,7 @@ export default function Landing() {
 
                     <h1 className="font-serif text-4xl font-medium leading-[1.1] tracking-tight text-obsidian dark:text-ivory sm:text-5xl md:text-6xl">
                         Find it, save it
-
-                        <br />
-
-                        let it{" "}
-                        <span className="relative inline-block whitespace-nowrap text-tomato">
-                            simmer
-                            <svg
-                                className="simmer-underline absolute -bottom-1 left-0 w-full"
-                                viewBox="0 0 200 12"
-                                preserveAspectRatio="none"
-                                aria-hidden="true"
-                            >
-                                <path
-                                    d="M2 8 C 40 2, 70 10, 100 6 C 130 2, 160 10, 198 5"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="4"
-                                    strokeLinecap="round"
-                                />
-                            </svg>
-                        </span>
-                        .
+                        
                     </h1>
                     <p className="max-w-md text-base leading-relaxed text-obsidian/70 dark:text-ivory/70 sm:text-lg">
                         Discover recipes worth cooking, save the ones you love, and add
@@ -49,10 +28,10 @@ export default function Landing() {
                             size="lg"
                             className="w-full bg-tomato text-ivory hover:bg-tomato/90 sm:w-auto"
                         >
-                            <Link to="/recipes" className="flex items-center justify-center gap-2">
+                            {/* <Link to="/recipes" className="flex items-center justify-center gap-2"> */}
                                 <ChefHat className="h-4 w-4" />
                                 Browse recipes
-                            </Link>
+                            {/* </Link> */}
                         </Button>
 
                         <Button
@@ -61,9 +40,9 @@ export default function Landing() {
                             variant="outline"
                             className="w-full border-olive text-olive hover:bg-olive/10 hover:text-olive dark:border-[#A3B896] dark:text-[#A3B896] dark:hover:bg-olive/20 dark:hover:text-[#A3B896] sm:w-auto"
                         >
-                            <Link to="/login" className="flex items-center justify-center gap-2">
+                            {/* <Link to="/login" className="flex items-center justify-center gap-2"> */}
                                 Create your own Recipies
-                            </Link>
+                            {/* </Link> */}
                         </Button>
 
                     </div>
@@ -79,20 +58,11 @@ export default function Landing() {
 
                     </div>
 
-                    <div className="absolute -bottom-5 left-4 flex max-w-[calc(100%-2rem)] items-center gap-2 rounded-2xl 
-                    border border-obsidian/10 bg-ivory px-4 py-3 shadow-lg dark:border-ivory/10 dark:bg-[#363B39] sm:left-6 
-                    sm:max-w-none">
-                        <div className="min-w-0 leading-tight">
-                            <p className="truncate text-sm font-semibold text-obsidian dark:text-ivory">
-                                20+ recipes
-                            </p>
-                            <p className="truncate text-xs text-obsidian/60 dark:text-ivory/60">
-                                ready to explore
-                            </p>
-                        </div>
-                    </div>
+
                 </div>
             </div>
+
+
 
         </section>
     )
