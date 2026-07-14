@@ -42,6 +42,31 @@ export default function Landing() {
                         your own creations to build out a collection that's entirely
                         yours — all saved right in your browser and available at the click of a button
                     </p>
+
+                    <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row">
+                        <Button
+                            asChild
+                            size="lg"
+                            className="w-full bg-tomato text-ivory hover:bg-tomato/90 sm:w-auto"
+                        >
+                            <Link to="/recipes" className="flex items-center justify-center gap-2">
+                                <ChefHat className="h-4 w-4" />
+                                Browse recipes
+                            </Link>
+                        </Button>
+
+                        <Button
+                            asChild
+                            size="lg"
+                            variant="outline"
+                            className="w-full border-olive text-olive hover:bg-olive/10 hover:text-olive dark:border-[#A3B896] dark:text-[#A3B896] dark:hover:bg-olive/20 dark:hover:text-[#A3B896] sm:w-auto"
+                        >
+                            <Link to="/login" className="flex items-center justify-center gap-2">
+                                Create your own Recipies
+                            </Link>
+                        </Button>
+
+                    </div>
                 </div>
             </div>
 
