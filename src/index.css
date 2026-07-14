@@ -3,6 +3,13 @@
 @import "shadcn/tailwind.css";
 @import "@fontsource-variable/geist";
 
+@theme {
+  --color-tomato: #C84B31;
+  --color-olive: #5D6E55;
+  --color-ivory: #F9F9F6;
+  --color-obsidian: #2D3130;
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -128,3 +135,4 @@
     @apply font-sans;
     }
 }
+
