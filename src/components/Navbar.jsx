@@ -1,6 +1,6 @@
 import { useState, useContext } from "react";
 import { NavLink } from "react-router-dom";
-import { ChefHat, Heart, BookMarked, Menu, X, LogIn, UserPlus } from "lucide-react";
+import { ChefHat, Heart, BookMarked, Menu, X, LogIn, UserPlus, Sun, Moon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ThemeContext } from "@/context/ThemeContext";
 import { useAuth } from "@/context/AuthContext";
@@ -23,6 +23,12 @@ export default function Navbar() {
                     <ChefHat className="h-6 w-6 text-tomato" strokeWidth={2} />
                     Simmer
                 </NavLink>
+                
+                <Button variant="ghost" size="icon" onClick={toggleTheme} className="h-9 w-9">
+                    {theme === 'dark' ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
+                    <span className="sr-only">Toggle theme</span>
+                </Button>
+
 
                 <nav className="hidden items-center gap-1 md:flex">
                     {navLinks.map(({ to, label, end, icon: Icon }) => (
