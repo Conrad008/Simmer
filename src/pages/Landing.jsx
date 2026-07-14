@@ -78,6 +78,19 @@ export default function Landing() {
                         />
 
                     </div>
+
+                    <div className="absolute -bottom-5 left-4 flex max-w-[calc(100%-2rem)] items-center gap-2 rounded-2xl 
+                    border border-obsidian/10 bg-ivory px-4 py-3 shadow-lg dark:border-ivory/10 dark:bg-[#363B39] sm:left-6 
+                    sm:max-w-none">
+                        <div className="min-w-0 leading-tight">
+                            <p className="truncate text-sm font-semibold text-obsidian dark:text-ivory">
+                                20+ recipes
+                            </p>
+                            <p className="truncate text-xs text-obsidian/60 dark:text-ivory/60">
+                                ready to explore
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
