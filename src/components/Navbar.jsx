@@ -1,4 +1,4 @@
-import { useState, useEffect, useContext } from "react";
+import { useState, useContext } from "react";
 import { NavLink } from "react-router-dom";
 import { ChefHat, Heart, BookMarked, Menu, X, LogIn, UserPlus } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -57,9 +57,56 @@ export default function Navbar() {
                         </NavLink>
                     </Button>
                 </div>
-                
+
+                <button
+                    type="button"
+                    onClick={() => setMobileOpen((open) => !open)}
+                    className="flex h-9 w-9 items-center justify-center rounded-full text-obsidian hover:bg-obsidian/5 md:hidden"
+                    aria-label={mobileOpen ? "Close menu" : "Open menu"}
+                    aria-expanded={mobileOpen}
+                >
+                    {mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+                </button>
             </div>
 
-        </header>
+            {/* Mobile menu panel */}
+            {mobileOpen && (
+                <div className="border-t border-obsidian/10 bg-ivory md:hidden">
+                    <nav className="flex flex-col gap-1 px-4 py-3">
+                        {navLinks.map(({ to, label, end, icon: Icon }) => (
+                            <NavLink
+                                key={to}
+                                to={to}
+                                end={end}
+                                onClick={() => setMobileOpen(false)}
+                                className={({ isActive }) =>
+                                    `flex items-center gap-2 rounded-lg px-3 py-2.5 text-sm font-medium ${isActive ? "bg-olive/10 text-olive" : "text-obsidian/70"
+                                    }`
+                                }
+                            >
+                                {Icon && <Icon className="h-4 w-4" strokeWidth={2.5} />}
+                                {label}
+                            </NavLink>
+                        ))}
+
+                        <div className="mt-2 flex flex-col gap-2 border-t border-obsidian/10 pt-3">
+                            <Button asChild variant="outline" className="justify-center">
+                                <NavLink to="/login" onClick={() => setMobileOpen(false)}>
+                                    <LogIn className="mr-1.5 h-4 w-4" />
+                                    Log in
+                                </NavLink>
+                            </Button>
+                            <Button asChild className="justify-center bg-tomato text-ivory hover:bg-tomato/90">
+                                <NavLink to="/register" onClick={() => setMobileOpen(false)}>
+                                    <UserPlus className="mr-1.5 h-4 w-4" />
+                                    Register
+                                </NavLink>
+                            </Button>
+                        </div>
+                    </nav>
+                </div>
+            )}
+
+        </header >
     )
 }
