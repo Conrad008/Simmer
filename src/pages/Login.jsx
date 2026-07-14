@@ -58,4 +58,18 @@ export default function Login() {
             setIsSubmitting(false);
         }
     };
+
+    return (
+        <div className="flex min-h-screen flex-col bg-ivory dark:bg-obsidian">
+            <header className="sticky top-0 z-50 flex w-full items-center justify-center bg-ivory px-5 py-4 dark:bg-obsidian">
+                <Link to="/" className="flex items-center gap-2">
+                    <ChefHat className="h-6 w-6 text-tomato" strokeWidth={2} />
+                    <span className="font-serif text-xl font-semibold tracking-tight text-obsidian dark:text-ivory">
+                        Simmer
+                    </span>
+                </Link>
+            </header>
+
+        </div>
+    )
 }
