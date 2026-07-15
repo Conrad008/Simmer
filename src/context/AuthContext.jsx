@@ -24,5 +24,33 @@ export function AuthProvider({ children }) {
         return result.user;
     };
 
+    const register = async (email, password, displayName) => {
+        const result = await createUserWithEmailAndPassword(auth, email, password);
+
+        if (displayName) {
+            await updateProfile(result.user, { displayName });
+            setUser({ ...result.user, displayName });
+        }
+
+        return result.user;
+    };
+
+    const loginWithGoogle = async () => {
+        const result = await signInWithPopup(auth, googleProvider);
+        return result.user;
+    };
+
+    const logout = () => signOut(auth);
+
+    const value = {
+        user,
+        isAuthenticated: !!user,
+        authLoading,
+        login,
+        register,
+        loginWithGoogle,
+        logout,
+    };
+    
 
 }
