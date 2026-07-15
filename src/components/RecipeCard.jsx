@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { Clock } from "lucide-react";
+import { Clock, Heart } from "lucide-react";
+import { useState } from "react";
 
 const favoriteKey = "simmerFavorites";
 
@@ -43,6 +44,20 @@ export default function RecipeCard({ recipe }) {
                     loading="lazy"
                     className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
+
+                <button
+                    type="button"
+                    onClick={handleFavoriteClick}
+                    aria-label={favorited ? "Remove from favorites" : "Add to favorites"}
+                    aria-pressed={favorited}
+                    className="absolute right-3 top-3 flex h-9 w-9 items-center justify-center rounded-full bg-white/90 shadow-sm backdrop-blur transition-transform hover:scale-110 active:scale-95 dark:bg-obsidian/80"
+                >
+                    <Heart
+                        className={`h-4.5 w-4.5 transition-colors ${favorited ? "fill-tomato text-tomato" : "fill-none text-obsidian dark:text-ivory"
+                            }`}
+                        strokeWidth={2}
+                    />
+                </button>
             </div>
 
             <div className="p-4">
