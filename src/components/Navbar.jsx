@@ -6,6 +6,7 @@ import { ThemeContext } from "@/context/ThemeContext";
 import { useAuth } from "@/context/AuthContext";
 
 const navLinks = [
+    { to: "/home", label: "Home" },
     { to: "/recipes", label: "Recipes" },
     { to: "/my-recipes", label: "My Recipes", icon: BookMarked },
     { to: "/favorites", label: "Favorites", icon: Heart },
