@@ -3,14 +3,14 @@ import { Loader2, AlertCircle } from "lucide-react";
 import RecipeCard from "@/components/RecipeCard";
 
 const favoritesKey = "simmerFavorites";
- 
+
 const getStoredFavorites = () => {
-  try {
-    const stored = JSON.parse(localStorage.getItem(favoritesKey) || "[]");
-    return Array.isArray(stored) ? stored : [];
-  } catch {
-    return [];
-  }
+    try {
+        const stored = JSON.parse(localStorage.getItem(favoritesKey) || "[]");
+        return Array.isArray(stored) ? stored : [];
+    } catch {
+        return [];
+    }
 };
 
 export default function RecipeList() {
@@ -53,4 +53,20 @@ export default function RecipeList() {
         }
     }, []);
 
+    if (loading) {
+        return (
+            <div className="flex flex-col items-center justify-center gap-3 py-20 text-obsidian/60 dark:text-ivory/60">
+                <Loader2 className="h-7 w-7 animate-spin text-tomato" />
+                <p className="text-sm">Loading recipes...</p>
+            </div>
+        );
+    }
+    if (error) {
+        return (
+            <div className="flex flex-col items-center justify-center gap-3 rounded-2xl border border-red-100 bg-red-50 py-16 text-center dark:border-red-900/30 dark:bg-red-950/20">
+                <AlertCircle className="h-7 w-7 text-red-500" />
+                <p className="text-sm text-red-600 dark:text-red-400">{error}</p>
+            </div>
+        );
+    }
 }
