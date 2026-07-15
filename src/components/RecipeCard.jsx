@@ -1,6 +1,17 @@
 import { Link } from "react-router-dom";
 import { Clock } from "lucide-react";
 
+const favoriteKey = "simmerFavorites";
+ 
+const getStoredFavorites = () => {
+  try {
+    const stored = JSON.parse(localStorage.getItem(favoriteKey) || "[]");
+    return Array.isArray(stored) ? stored : [];
+  } catch {
+    return [];
+  }
+};
+
 export default function RecipeCard({ recipe }) {
     const { id, name, image, prep } = recipe;
 
