@@ -213,6 +213,27 @@ export default function Register() {
                                 </div>
                             </div>
 
+                            {error && (
+                                <p className="rounded-lg border border-red-200 bg-red-50 p-2.5 text-xs text-red-600 dark:border-red-900/40 dark:bg-red-950/30 dark:text-red-400">
+                                    {error}
+                                </p>
+                            )}
+
+                            <Button
+                                type="submit"
+                                disabled={isSubmitting || isGoogleSubmitting}
+                                className="mt-2 w-full bg-tomato text-ivory shadow-lg transition-all hover:bg-tomato/90 active:scale-[0.98] disabled:opacity-70"
+                            >
+                                {isSubmitting ? (
+                                    <span className="flex items-center gap-2">
+                                        <Loader2 className="h-4 w-4 animate-spin" />
+                                        Creating account...
+                                    </span>
+                                ) : (
+                                    "Create Account"
+                                )}
+                            </Button>
+
                         </form>
 
 
