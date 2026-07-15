@@ -187,7 +187,29 @@ export default function Register() {
                                     >
                                         {showPassword ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
                                     </button>
-                                    
+
+                                </div>
+                            </div>
+
+                            <div className="space-y-1">
+                                <label
+                                    htmlFor="confirmPassword"
+                                    className="block text-xs font-semibold uppercase tracking-wider text-obsidian/70 dark:text-ivory/70"
+                                >
+                                    Confirm Password
+                                </label>
+                                <div className="relative">
+                                    <Lock className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-obsidian/40 dark:text-ivory/40" />
+                                    <Input
+                                        id="confirmPassword"
+                                        type={showPassword ? "text" : "password"}
+                                        autoComplete="new-password"
+                                        placeholder="Re-enter your password"
+                                        value={confirmPassword}
+                                        onChange={(e) => setConfirmPassword(e.target.value)}
+                                        disabled={isSubmitting || isGoogleSubmitting}
+                                        className="border-transparent bg-obsidian/[0.03] pl-10 text-obsidian placeholder:text-obsidian/30 focus-visible:border-tomato/30 focus-visible:ring-tomato/20 dark:bg-ivory/5 dark:text-ivory dark:placeholder:text-ivory/30"
+                                    />
                                 </div>
                             </div>
 
