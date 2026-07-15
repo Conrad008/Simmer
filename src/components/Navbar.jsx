@@ -6,19 +6,19 @@ import { ThemeContext } from "@/context/ThemeContext";
 import { useAuth } from "@/context/AuthContext";
 
 const navLinks = [
-    { to: "/home", label: "Home" },
-    { to: "/recipes", label: "Recipes" },
-    { to: "/my-recipes", label: "My Recipes", icon: BookMarked },
-    { to: "/favorites", label: "Favorites", icon: Heart },
+  { to: "/home", label: "Home" },
+  { to: "/recipes", label: "Recipes" },
+  { to: "/my-recipes", label: "My Recipes", icon: BookMarked },
+  { to: "/favorites", label: "Favorites", icon: Heart },
 ];
 
 export default function Navbar() {
-    const { theme, toggleTheme } = useContext(ThemeContext);
-    const { user, isAuthenticated, logout } = useAuth();
-    const [mobileOpen, setMobileOpen] = useState(false);
+  const { theme, toggleTheme } = useContext(ThemeContext);
+  const { user, isAuthenticated, logout } = useAuth();
+  const [mobileOpen, setMobileOpen] = useState(false);
 
-    return (
-            <header className="sticky top-0 z-50 border-b border-obsidian/10 bg-ivory/95 backdrop-blur dark:border-ivory/10 dark:bg-obsidian/95">
+  return (
+    <header className="sticky top-0 z-50 border-b border-obsidian/10 bg-ivory/95 backdrop-blur dark:border-ivory/10 dark:bg-obsidian/95">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 md:px-8">
         <NavLink
           to="/"
@@ -27,17 +27,16 @@ export default function Navbar() {
           <ChefHat className="h-6 w-6 text-tomato" strokeWidth={2} />
           Simmer
         </NavLink>
- 
+
         <nav className="hidden items-center gap-1 md:flex">
           {navLinks.map(({ to, label, icon: Icon }) => (
             <NavLink
               key={to}
               to={to}
               className={({ isActive }) =>
-                `flex items-center gap-1.5 rounded-full px-4 py-2 text-sm font-medium transition-colors ${
-                  isActive
-                    ? "bg-olive/10 text-olive"
-                    : "text-obsidian/70 hover:bg-obsidian/5 hover:text-obsidian dark:text-ivory/70 dark:hover:bg-ivory/10 dark:hover:text-ivory"
+                `flex items-center gap-1.5 rounded-full px-4 py-2 text-sm font-medium transition-colors ${isActive
+                  ? "bg-olive/10 text-olive"
+                  : "text-obsidian/70 hover:bg-obsidian/5 hover:text-obsidian dark:text-ivory/70 dark:hover:bg-ivory/10 dark:hover:text-ivory"
                 }`
               }
             >
@@ -46,7 +45,7 @@ export default function Navbar() {
             </NavLink>
           ))}
         </nav>
- 
+
         <div className="flex items-center gap-2">
           <Button
             variant="ghost"
@@ -57,7 +56,7 @@ export default function Navbar() {
             {theme === "dark" ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
             <span className="sr-only">Toggle theme</span>
           </Button>
- 
+
           <div className="hidden items-center gap-2 border-l border-obsidian/10 pl-2 md:flex dark:border-ivory/10">
             {isAuthenticated ? (
               <>
@@ -100,7 +99,7 @@ export default function Navbar() {
               </>
             )}
           </div>
- 
+
           <button
             type="button"
             onClick={() => setMobileOpen((open) => !open)}
@@ -112,7 +111,7 @@ export default function Navbar() {
           </button>
         </div>
       </div>
- 
+
       {mobileOpen && (
         <div className="border-t border-obsidian/10 bg-ivory md:hidden dark:border-ivory/10 dark:bg-obsidian">
           <nav className="flex flex-col gap-1 px-4 py-3">
@@ -122,10 +121,9 @@ export default function Navbar() {
                 to={to}
                 onClick={() => setMobileOpen(false)}
                 className={({ isActive }) =>
-                  `flex items-center gap-2 rounded-lg px-3 py-2.5 text-sm font-medium ${
-                    isActive
-                      ? "bg-olive/10 text-olive"
-                      : "text-obsidian/70 dark:text-ivory/70"
+                  `flex items-center gap-2 rounded-lg px-3 py-2.5 text-sm font-medium ${isActive
+                    ? "bg-olive/10 text-olive"
+                    : "text-obsidian/70 dark:text-ivory/70"
                   }`
                 }
               >
@@ -133,7 +131,7 @@ export default function Navbar() {
                 {label}
               </NavLink>
             ))}
- 
+
             <div className="mt-2 flex flex-col gap-2 border-t border-obsidian/10 pt-3 dark:border-ivory/10">
               {isAuthenticated ? (
                 <>
@@ -181,5 +179,5 @@ export default function Navbar() {
         </div>
       )}
     </header>
-    )
+  )
 }
