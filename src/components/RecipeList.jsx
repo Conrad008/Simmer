@@ -13,7 +13,7 @@ const getStoredFavorites = () => {
     }
 };
 
-export default function RecipeList() {
+export default function RecipeList({ favoritesOnly = false }) {
     const [recipes, setRecipes] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState("");
@@ -89,4 +89,11 @@ export default function RecipeList() {
             </div>
         );
     }
+    return (
+        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            {visibleRecipes.map((recipe) => (
+                <RecipeCard key={recipe.id} recipe={recipe} />
+            ))}
+        </div>
+    );
 }
