@@ -5,6 +5,9 @@
 
  Built as a final project to demonstrate React fundamentals: component composition, client-side routing, derived state, and persistence without a backend.It demonstrates key components of REACT such as use of Hooks, Fetching of data from APIs, and use of components libraries.
 
+## Problem statement
+ Simmer is designed to help people able to easily accses some of their favourite recipies and save them for use to the favourites page. they are also able to add their own unique recipies for later use. 
+
 ## Features
 
  **Browse recipes** — searchable, filterable grid of recipes (by cuisine and meal type)
@@ -12,8 +15,6 @@
  
  **Favorites** — save recipes you love, persisted across sessions
  Weekly meal plan — assign recipes to Breakfast, Lunch, and Dinner across all 7 days
- 
- **Auto-generated shopping list** — ingredients from your planned meals are combined and quantities summed automatically, with a checklist to track what you've picked up
  
  **Add your own recipes** — create custom recipes with your own title, image (via URL), cuisine, meal type, prep time, servings, ingredients, and instructions. Edit or delete any recipe you've added, all saved to your browser so they're there next time you visit.
 
