@@ -1,4 +1,4 @@
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { ChefHat, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -28,10 +28,10 @@ export default function Landing() {
                             size="lg"
                             className="w-full bg-tomato text-ivory hover:bg-tomato/90 sm:w-auto"
                         >
-                            {/* <Link to="/recipes" className="flex items-center justify-center gap-2"> */}
+                            <Link to="/recipes" className="flex items-center justify-center gap-2">
                                 <ChefHat className="h-4 w-4" />
                                 Browse recipes
-                            {/* </Link> */}
+                            </Link>
                         </Button>
 
                         <Button
@@ -40,9 +40,9 @@ export default function Landing() {
                             variant="outline"
                             className="w-full border-olive text-olive hover:bg-olive/10 hover:text-olive dark:border-[#A3B896] dark:text-[#A3B896] dark:hover:bg-olive/20 dark:hover:text-[#A3B896] sm:w-auto"
                         >
-                            {/* <Link to="/login" className="flex items-center justify-center gap-2"> */}
+                            <Link to="/register" className="flex items-center justify-center gap-2">
                                 Create your own Recipies
-                            {/* </Link> */}
+                            </Link>
                         </Button>
 
                     </div>
