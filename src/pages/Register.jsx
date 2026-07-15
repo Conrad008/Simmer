@@ -34,4 +34,38 @@ export default function Register() {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [isGoogleSubmitting, setIsGoogleSubmitting] = useState(false);
     const [error, setError] = useState("");
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        if (!name || !email || !password || !confirmPassword) {
+            setError("Please fill in all fields.");
+            return;
+        }
+
+        if (password !== confirmPassword) {
+            setError("Passwords don't match.");
+            return;
+        }
+
+        if (password.length < 6) {
+            setError("Your password should be at least 6 characters.");
+            return;
+        }
+
+        setError("");
+        setIsSubmitting(true);
+        try {
+            await register(email, password, name);
+            navigate("/home");
+        } catch (err) {
+            setError(
+                getFriendlyAuthError(err?.code) ||
+                err?.message ||
+                "We couldn't create your account. Please try again."
+            );
+        } finally {
+            setIsSubmitting(false);
+        }
+    };
 }
