@@ -98,6 +98,26 @@ export default function Register() {
                 </Link>
             </header>
 
+            <main className="flex flex-grow items-center justify-center px-5 py-12 sm:py-16">
+                <section className="w-full max-w-md">
+                    <div className="rounded-xl border border-olive/10 bg-white p-6 shadow-xl dark:border-ivory/10 dark:bg-[#3A3E3C] dark:shadow-black/40 sm:p-8">
+                        <div className="mb-8 text-center">
+                            <h2 className="font-serif text-2xl font-semibold text-obsidian dark:text-ivory">
+                                Create your account
+                            </h2>
+
+                            <p className="mt-1 text-sm text-obsidian/60 dark:text-ivory/60">
+                                Start building your own recipe collection
+                            </p>
+
+                        </div>
+                        
+
+                    </div>
+
+                </section>
+            </main>
+
         </div>
     )
 }
