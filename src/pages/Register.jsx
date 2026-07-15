@@ -21,3 +21,17 @@ const getFriendlyAuthError = (code) => {
             return null;
     }
 };
+
+export default function Register() {
+    const navigate = useNavigate();
+    const { register, loginWithGoogle } = useAuth();
+
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const [confirmPassword, setConfirmPassword] = useState("");
+    const [showPassword, setShowPassword] = useState(false);
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [isGoogleSubmitting, setIsGoogleSubmitting] = useState(false);
+    const [error, setError] = useState("");
+}
