@@ -236,7 +236,13 @@ export default function Register() {
 
                         </form>
 
-
+                        <div className="my-8 flex items-center">
+                            <div className="flex-grow border-t border-olive/20 dark:border-ivory/10" />
+                            <span className="mx-3 text-xs font-semibold uppercase tracking-widest text-obsidian/40 dark:text-ivory/40">
+                                or
+                            </span>
+                            <div className="flex-grow border-t border-olive/20 dark:border-ivory/10" />
+                        </div>
                     </div>
 
                 </section>
