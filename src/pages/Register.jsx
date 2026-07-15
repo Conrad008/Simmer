@@ -178,6 +178,16 @@ export default function Register() {
                                         disabled={isSubmitting || isGoogleSubmitting}
                                         className="border-transparent bg-obsidian/[0.03] px-10 text-obsidian placeholder:text-obsidian/30 focus-visible:border-tomato/30 focus-visible:ring-tomato/20 dark:bg-ivory/5 dark:text-ivory dark:placeholder:text-ivory/30"
                                     />
+
+                                    <button
+                                        type="button"
+                                        onClick={() => setShowPassword((v) => !v)}
+                                        className="absolute right-3 top-1/2 -translate-y-1/2 text-obsidian/40 hover:text-obsidian/70 dark:text-ivory/40 dark:hover:text-ivory/70"
+                                        aria-label={showPassword ? "Hide password" : "Show password"}
+                                    >
+                                        {showPassword ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
+                                    </button>
+                                    
                                 </div>
                             </div>
 
