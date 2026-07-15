@@ -2,6 +2,17 @@ import { useState, useEffect } from "react";
 import { Loader2, AlertCircle } from "lucide-react";
 import RecipeCard from "@/components/RecipeCard";
 
+const favoritesKey = "simmerFavorites";
+ 
+const getStoredFavorites = () => {
+  try {
+    const stored = JSON.parse(localStorage.getItem(favoritesKey) || "[]");
+    return Array.isArray(stored) ? stored : [];
+  } catch {
+    return [];
+  }
+};
+
 export default function RecipeList() {
     const [recipes, setRecipes] = useState([]);
     const [loading, setLoading] = useState(true);
