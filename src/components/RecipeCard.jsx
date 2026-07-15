@@ -2,18 +2,33 @@ import { Link } from "react-router-dom";
 import { Clock } from "lucide-react";
 
 const favoriteKey = "simmerFavorites";
- 
+
 const getStoredFavorites = () => {
-  try {
-    const stored = JSON.parse(localStorage.getItem(favoriteKey) || "[]");
-    return Array.isArray(stored) ? stored : [];
-  } catch {
-    return [];
-  }
+    try {
+        const stored = JSON.parse(localStorage.getItem(favoriteKey) || "[]");
+        return Array.isArray(stored) ? stored : [];
+    } catch {
+        return [];
+    }
 };
 
 export default function RecipeCard({ recipe }) {
     const { id, name, image, prep } = recipe;
+
+    const [favorited, setFavorited] = useState(() => getStoredFavorites().includes(id));
+
+    const handleFavoriteClick = (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+
+        const stored = getStoredFavorites();
+        const updated = stored.includes(id)
+            ? stored.filter((favId) => favId !== id)
+            : [...stored, id];
+
+        localStorage.setItem(favoriteKey, JSON.stringify(updated));
+        setFavorited(updated.includes(id));
+    };
 
     return (
         <Link
