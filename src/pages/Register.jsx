@@ -49,7 +49,7 @@ export default function Register() {
         }
 
         if (password.length < 6) {
-            setError("Your password should be at least 6 characters.");
+            setError("Your password should be at least 6 characters long.");
             return;
         }
 
@@ -66,6 +66,25 @@ export default function Register() {
             );
         } finally {
             setIsSubmitting(false);
+        }
+    };
+
+    const handleGoogleSignUp = async () => {
+        setError("");
+        setIsGoogleSubmitting(true);
+        try {
+            await loginWithGoogle();
+            navigate("/home");
+        } catch (err) {
+            if (err?.code !== "auth/popup-closed-by-user") {
+                setError(
+                    getFriendlyAuthError(err?.code) ||
+                    err?.message ||
+                    "We couldn't sign you up with Google. Please try again."
+                );
+            }
+        } finally {
+            setIsGoogleSubmitting(false);
         }
     };
 }
