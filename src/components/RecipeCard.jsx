@@ -1,8 +1,14 @@
 import { Link } from "react-router-dom";
-import { Clock, Heart } from "lucide-react";
+import { Clock, Heart, Pencil, Trash2 } from "lucide-react";
 import { useState } from "react";
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import { AlertDialog, AlertDialogContent, AlertDialogHeader, AlertDialogTitle, AlertDialogDescription, AlertDialogFooter, AlertDialogCancel, AlertDialogAction } from "@/components/ui/alert-dialog";
+import AddRecipeForm from "@/components/AddRecipeForm";
+
 
 const favoriteKey = "simmerFavorites";
+const customRecipesKey = "simmerCustomRecipes";
+
 
 const getStoredFavorites = () => {
     try {
@@ -13,10 +19,22 @@ const getStoredFavorites = () => {
     }
 };
 
+const getStoredCustomRecipes = () => {
+    try {
+        const stored = JSON.parse(localStorage.getItem(customRecipesKey) || "[]");
+        return Array.isArray(stored) ? stored : [];
+    } catch {
+        return [];
+    }
+};
+
 export default function RecipeCard({ recipe }) {
-    const { id, name, image, prep } = recipe;
+    const { id, name, image, prep, isCustom } = recipe;
 
     const [favorited, setFavorited] = useState(() => getStoredFavorites().includes(id));
+
+    const [editOpen, setEditOpen] = useState(false);
+    const [deleteOpen, setDeleteOpen] = useState(false);
 
     const handleFavoriteClick = (e) => {
         e.preventDefault();
@@ -31,6 +49,36 @@ export default function RecipeCard({ recipe }) {
         setFavorited(updated.includes(id));
     };
 
+    const handleEditClick = (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        setEditOpen(true);
+    };
+
+    const handleSaved = () => {
+        setEditOpen(false);
+
+        window.location.reload();
+    };
+
+    const handleDeleteClick = (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        setDeleteOpen(true);
+    };
+
+    const confirmDelete = () => {
+        const remainingRecipes = getStoredCustomRecipes().filter((r) => r.id !== id);
+        localStorage.setItem(customRecipesKey, JSON.stringify(remainingRecipes));
+
+
+        const remainingFavorites = getStoredFavorites().filter((favId) => favId !== id);
+        localStorage.setItem(favoriteKey, JSON.stringify(remainingFavorites));
+
+        window.location.reload();
+    };
+
+
     return (
         <Link
             to={`/recipes/${id}`}
@@ -44,6 +92,28 @@ export default function RecipeCard({ recipe }) {
                     loading="lazy"
                     className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
+
+                {isCustom && (
+                    <div className="absolute left-3 top-3 flex flex-col gap-2">
+                        <button
+                            type="button"
+                            onClick={handleEditClick}
+                            aria-label="Edit recipe"
+                            className="flex h-9 w-9 items-center justify-center rounded-full bg-white/90 shadow-sm backdrop-blur transition-transform hover:scale-110 active:scale-95 dark:bg-obsidian/80"
+                        >
+                            <Pencil className="h-4 w-4 text-obsidian dark:text-ivory" strokeWidth={2} />
+                        </button>
+
+                        <button
+                            type="button"
+                            onClick={handleDeleteClick}
+                            aria-label="Delete recipe"
+                            className="flex h-9 w-9 items-center justify-center rounded-full bg-white/90 shadow-sm backdrop-blur transition-transform hover:scale-110 hover:bg-red-50 active:scale-95 dark:bg-obsidian/80 dark:hover:bg-red-950/40"
+                        >
+                            <Trash2 className="h-4 w-4 text-red-500" strokeWidth={2} />
+                        </button>
+                    </div>
+                )}
 
                 <button
                     type="button"
