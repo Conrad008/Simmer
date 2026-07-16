@@ -56,6 +56,39 @@ export default function Home() {
                 </div>
 
                 <AddRecipeForm />
+
+                <div className="mt-16 sm:mt-20">
+                    <h2 className="text-center font-serif text-2xl font-medium text-obsidian dark:text-ivory sm:text-3xl">
+                        What people are cooking up
+                    </h2>
+
+                    <div className="mt-8 grid grid-cols-1 gap-5 sm:grid-cols-3">
+                        {testimonials.map((testimonial) => (
+                            <div
+                                key={testimonial.name}
+                                className="flex flex-col rounded-2xl border border-olive/10 bg-white p-5 shadow-sm dark:border-ivory/10 dark:bg-[#3A3E3C]"
+                            >
+                                <div className="flex gap-0.5">
+                                    {Array.from({ length: 5 }).map((_, i) => (
+                                        <Star
+                                            key={i}
+                                            className={`h-3.5 w-3.5 ${i < testimonial.rating
+                                                    ? "fill-tomato text-tomato"
+                                                    : "fill-none text-obsidian/20 dark:text-ivory/20"
+                                                }`}
+                                        />
+                                    ))}
+                                </div>
+                                <p className="mt-3 flex-grow text-sm leading-relaxed text-obsidian/70 dark:text-ivory/70">
+                                    "{testimonial.quote}"
+                                </p>
+                                <p className="mt-4 text-sm font-semibold text-obsidian dark:text-ivory">
+                                    {testimonial.name}
+                                </p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
             </div>
 
         </div>
