@@ -4,3 +4,24 @@ import { Star } from "lucide-react";
 import { useAuth } from "@/context/AuthContext";
 import AddRecipeForm from "@/components/AddRecipeForm";
  
+const testimonials = [
+  {
+    name: "Amara K.",
+    quote:
+      "Simmer made weeknight dinners so much easier. I favorite everything I want to try and never lose track of a recipe again.",
+    rating: 5,
+  },
+  {
+    name: "Wafula.S.",
+    quote:
+      "I love that I can add my own family recipes and have them sit right alongside everything else. Feels like my own little cookbook.",
+    rating: 5,
+  },
+  {
+    name: "Priya R.",
+    quote:
+      "Simple, fast, and no clutter. I just wanted somewhere to browse recipes and save favorites — this is exactly that.",
+    rating: 4,
+  },
+];
+ 
