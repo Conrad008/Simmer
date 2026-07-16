@@ -226,6 +226,11 @@ export default function AddRecipeForm({ recipe = null, onSaved }) {
                         Recipe added! Check it out on the Recipes page or in My Recipes.
                     </p>
                 )}
+
+                <Button type="submit" className="w-full bg-tomato text-ivory hover:bg-tomato/90 sm:w-auto">
+                    {isEditing ? "Save Changes" : "Add Recipe"}
+                </Button>
+
             </form>
         </div>
     )
