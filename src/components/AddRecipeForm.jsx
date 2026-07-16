@@ -214,6 +214,18 @@ export default function AddRecipeForm({ recipe = null, onSaved }) {
                     />
                 </div>
 
+                {error && (
+                    <p className="rounded-lg border border-red-200 bg-red-50 p-2.5 text-xs text-red-600 dark:border-red-900/40 dark:bg-red-950/30 dark:text-red-400">
+                        {error}
+                    </p>
+                )}
+
+                {success && !isEditing && (
+                    <p className="flex items-center gap-2 rounded-lg border border-olive/20 bg-olive/10 p-2.5 text-xs text-olive dark:border-olive/30 dark:bg-olive/15">
+                        <CheckCircle2 className="h-4 w-4 shrink-0" />
+                        Recipe added! Check it out on the Recipes page or in My Recipes.
+                    </p>
+                )}
             </form>
         </div>
     )
