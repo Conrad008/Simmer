@@ -33,7 +33,7 @@ const recipeToFormValues = (recipe) => ({
 });
 
 export default function AddRecipeForm({ recipe = null, onSaved }) {
-     const isEditing = Boolean(recipe);
+    const isEditing = Boolean(recipe);
 
     const [form, setForm] = useState(() => (isEditing ? recipeToFormValues(recipe) : emptyForm));
     const [error, setError] = useState("");
@@ -87,5 +87,20 @@ export default function AddRecipeForm({ recipe = null, onSaved }) {
         } else {
             setForm(emptyForm);
         }
-   }
+    }
+
+    return (
+        <div className={isEditing ? "" : "rounded-2xl border border-olive/10 bg-white p-6 shadow-sm dark:border-ivory/10 dark:bg-[#3A3E3C] sm:p-8"}>
+            {!isEditing && (
+                <>
+                    <h2 className="font-serif text-2xl font-medium text-obsidian dark:text-ivory">
+                        Share your own recipe
+                    </h2>
+                    <p className="mt-1 text-sm text-obsidian/60 dark:text-ivory/60">
+                        Add a dish you love and it'll show up alongside everything else in Recipes and in My Recipes.
+                    </p>
+                </>
+            )}
+        </div>
+    )
 }
