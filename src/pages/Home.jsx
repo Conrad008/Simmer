@@ -54,6 +54,8 @@ export default function Home() {
                         Ready to browse or add something new to the collection?
                     </p>
                 </div>
+
+                <AddRecipeForm />
             </div>
 
         </div>
