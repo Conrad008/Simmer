@@ -101,6 +101,120 @@ export default function AddRecipeForm({ recipe = null, onSaved }) {
                     </p>
                 </>
             )}
+
+            <form className={isEditing ? "space-y-5" : "mt-6 space-y-5"} onSubmit={handleSubmit}>
+                <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
+                    <div className="space-y-1">
+                        <label
+                            htmlFor="name"
+                            className="block text-xs font-semibold uppercase tracking-wider text-obsidian/70 dark:text-ivory/70"
+                        >
+                            Recipe Name
+                        </label>
+                        <Input
+                            id="name"
+                            name="name"
+                            placeholder="Grandma's Lasagna"
+                            value={form.name}
+                            onChange={handleChange}
+                            className="border-obsidian/10 bg-obsidian/[0.02] text-obsidian placeholder:text-obsidian/30 focus-visible:border-tomato/30 focus-visible:ring-tomato/20 dark:border-ivory/10 dark:bg-ivory/5 dark:text-ivory dark:placeholder:text-ivory/30"
+                        />
+                    </div>
+
+                    <div className="space-y-1">
+                        <label
+                            htmlFor="prep"
+                            className="block text-xs font-semibold uppercase tracking-wider text-obsidian/70 dark:text-ivory/70"
+                        >
+                            Prep Time
+                        </label>
+                        <Input
+                            id="prep"
+                            name="prep"
+                            placeholder="25 mins"
+                            value={form.prep}
+                            onChange={handleChange}
+                            className="border-obsidian/10 bg-obsidian/[0.02] text-obsidian placeholder:text-obsidian/30 focus-visible:border-tomato/30 focus-visible:ring-tomato/20 dark:border-ivory/10 dark:bg-ivory/5 dark:text-ivory dark:placeholder:text-ivory/30"
+                        />
+                    </div>
+
+                </div>
+
+                <div className="space-y-1">
+                    <label
+                        htmlFor="image"
+                        className="block text-xs font-semibold uppercase tracking-wider text-obsidian/70 dark:text-ivory/70"
+                    >
+                        Image URL(optional)
+                    </label>
+                    <Input
+                        id="image"
+                        name="image"
+                        type="url"
+                        placeholder="https://images.unsplash.com/..."
+                        value={form.image}
+                        onChange={handleChange}
+                        className="border-obsidian/10 bg-obsidian/[0.02] text-obsidian placeholder:text-obsidian/30 focus-visible:border-tomato/30 focus-visible:ring-tomato/20 dark:border-ivory/10 dark:bg-ivory/5 dark:text-ivory dark:placeholder:text-ivory/30"
+                    />
+                </div>
+
+                <div className="space-y-1">
+                    <label
+                        htmlFor="description"
+                        className="block text-xs font-semibold uppercase tracking-wider text-obsidian/70 dark:text-ivory/70"
+                    >
+                        Description
+                    </label>
+                    <textarea
+                        id="description"
+                        name="description"
+                        rows={2}
+                        placeholder="A short, tasty description of the dish."
+                        value={form.description}
+                        onChange={handleChange}
+                        className="w-full rounded-md border border-obsidian/10 bg-obsidian/[0.02] px-3 py-2 text-sm text-obsidian placeholder:text-obsidian/30 outline-none focus-visible:border-tomato/30 focus-visible:ring-2 focus-visible:ring-tomato/20 dark:border-ivory/10 dark:bg-ivory/5 dark:text-ivory dark:placeholder:text-ivory/30"
+                    />
+                </div>
+
+                <div className="space-y-1">
+                    <label
+                        htmlFor="ingredients"
+                        className="block text-xs font-semibold uppercase tracking-wider text-obsidian/70 dark:text-ivory/70"
+                    >
+                        Ingredients{" "}
+                        <span className="normal-case text-obsidian/40 dark:text-ivory/40">(one per line)</span>
+                    </label>
+                    <textarea
+                        id="ingredients"
+                        name="ingredients"
+                        rows={5}
+                        placeholder={"2 cups flour\n1 tsp salt\n3 eggs"}
+                        value={form.ingredients}
+                        onChange={handleChange}
+                        className="w-full rounded-md border border-obsidian/10 bg-obsidian/[0.02] px-3 py-2 text-sm text-obsidian placeholder:text-obsidian/30 outline-none focus-visible:border-tomato/30 focus-visible:ring-2 focus-visible:ring-tomato/20 dark:border-ivory/10 dark:bg-ivory/5 dark:text-ivory dark:placeholder:text-ivory/30"
+                    />
+                </div>
+
+                <div className="space-y-1">
+                    <label
+                        htmlFor="steps"
+                        className="block text-xs font-semibold uppercase tracking-wider text-obsidian/70 dark:text-ivory/70"
+                    >
+                        Steps{" "}
+                        <span className="normal-case text-obsidian/40 dark:text-ivory/40">(one per line)</span>
+                    </label>
+                    <textarea
+                        id="steps"
+                        name="steps"
+                        rows={5}
+                        placeholder={"Preheat the oven to 200°C.\nMix the dry ingredients.\nBake for 25 minutes."}
+                        value={form.steps}
+                        onChange={handleChange}
+                        className="w-full rounded-md border border-obsidian/10 bg-obsidian/[0.02] px-3 py-2 text-sm text-obsidian placeholder:text-obsidian/30 outline-none focus-visible:border-tomato/30 focus-visible:ring-2 focus-visible:ring-tomato/20 dark:border-ivory/10 dark:bg-ivory/5 dark:text-ivory dark:placeholder:text-ivory/30"
+                    />
+                </div>
+
+            </form>
         </div>
     )
 }
