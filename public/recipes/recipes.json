@@ -1,0 +1,446 @@
+[
+  {
+    "id": 1,
+    "name": "Avocado Toast with Egg",
+    "image": "https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?w=600&q=80",
+    "prep": "10 mins",
+    "description": "Crisp toasted sourdough topped with creamy mashed avocado and a perfectly fried egg — a simple breakfast that never gets old.",
+    "ingredients": [
+      "2 slices sourdough bread",
+      "1 ripe avocado",
+      "2 eggs",
+      "1/2 lemon, juiced",
+      "Salt and pepper to taste",
+      "Chili flakes (optional)"
+    ],
+    "steps": [
+      "Toast the sourdough slices until golden and crisp.",
+      "Mash the avocado in a bowl with lemon juice, salt, and pepper.",
+      "Fry the eggs to your liking in a lightly oiled pan.",
+      "Spread the mashed avocado onto the toast and top with the fried egg.",
+      "Finish with a pinch of chili flakes if desired."
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Greek Salad",
+    "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=600&q=80",
+    "prep": "15 mins",
+    "description": "A refreshing no-cook salad of crisp cucumber, juicy tomatoes, olives, and salty feta tossed in olive oil.",
+    "ingredients": [
+      "2 tomatoes, chopped",
+      "1 cucumber, chopped",
+      "1/2 red onion, sliced",
+      "100g feta cheese, cubed",
+      "1/2 cup kalamata olives",
+      "3 tbsp olive oil",
+      "1 tbsp dried oregano"
+    ],
+    "steps": [
+      "Chop the tomatoes and cucumber into bite-sized chunks.",
+      "Thinly slice the red onion.",
+      "Combine tomatoes, cucumber, onion, feta, and olives in a bowl.",
+      "Drizzle with olive oil and sprinkle with oregano.",
+      "Toss gently and serve immediately."
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Margherita Flatbread",
+    "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&q=80",
+    "prep": "20 mins",
+    "description": "A quick flatbread pizza topped with tomato sauce, fresh mozzarella, and basil — ready faster than delivery.",
+    "ingredients": [
+      "2 flatbreads or naan",
+      "1/2 cup tomato sauce",
+      "150g fresh mozzarella, sliced",
+      "Handful of fresh basil leaves",
+      "2 tbsp olive oil",
+      "Salt to taste"
+    ],
+    "steps": [
+      "Preheat the oven to 220°C (425°F).",
+      "Spread tomato sauce evenly over each flatbread.",
+      "Top with slices of fresh mozzarella.",
+      "Bake for 8-10 minutes until the cheese is melted and bubbling.",
+      "Top with fresh basil, a drizzle of olive oil, and a pinch of salt."
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Veggie Stir Fry",
+    "image": "https://images.unsplash.com/photo-1512058564366-18510be2db19?w=600&q=80",
+    "prep": "15 mins",
+    "description": "A colorful medley of crisp vegetables tossed in a savory garlic-soy sauce, on the table in one pan.",
+    "ingredients": [
+      "1 bell pepper, sliced",
+      "1 carrot, julienned",
+      "1 cup broccoli florets",
+      "2 cloves garlic, minced",
+      "3 tbsp soy sauce",
+      "1 tbsp sesame oil",
+      "1 tsp grated ginger"
+    ],
+    "steps": [
+      "Heat sesame oil in a wok or large pan over high heat.",
+      "Add garlic and ginger, stir for 30 seconds until fragrant.",
+      "Add the vegetables and stir fry for 5-7 minutes until crisp-tender.",
+      "Pour in the soy sauce and toss to coat evenly.",
+      "Serve hot over rice or noodles."
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Classic Cheese Omelette",
+    "image": "https://images.unsplash.com/photo-1525351484163-7529414344d8?w=600&q=80",
+    "prep": "10 mins",
+    "description": "Fluffy folded eggs with melted cheese — a fast, protein-packed classic for any time of day.",
+    "ingredients": [
+      "3 eggs",
+      "1/4 cup shredded cheddar",
+      "1 tbsp butter",
+      "Salt and pepper to taste",
+      "Chopped chives (optional)"
+    ],
+    "steps": [
+      "Whisk the eggs with a pinch of salt and pepper.",
+      "Melt butter in a nonstick pan over medium heat.",
+      "Pour in the eggs and let set for 1-2 minutes.",
+      "Sprinkle cheese over half the omelette and fold over.",
+      "Cook for another minute, then slide onto a plate and garnish with chives."
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Caprese Salad",
+    "image": "https://images.unsplash.com/photo-1592417817098-8fd3d9eb14a5?w=600&q=80",
+    "prep": "10 mins",
+    "description": "Simple Italian elegance: layered tomatoes, fresh mozzarella, and basil finished with balsamic glaze.",
+    "ingredients": [
+      "3 large tomatoes, sliced",
+      "200g fresh mozzarella, sliced",
+      "Handful of fresh basil leaves",
+      "2 tbsp olive oil",
+      "1 tbsp balsamic glaze",
+      "Salt and pepper to taste"
+    ],
+    "steps": [
+      "Arrange alternating slices of tomato and mozzarella on a plate.",
+      "Tuck basil leaves between the slices.",
+      "Drizzle with olive oil and balsamic glaze.",
+      "Season with salt and pepper before serving."
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Garlic Butter Shrimp",
+    "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=600&q=80",
+    "prep": "12 mins",
+    "description": "Juicy shrimp seared fast in a rich garlic butter sauce — restaurant flavor in barely 10 minutes.",
+    "ingredients": [
+      "400g shrimp, peeled and deveined",
+      "4 tbsp butter",
+      "4 cloves garlic, minced",
+      "1 lemon, juiced",
+      "2 tbsp chopped parsley",
+      "Salt and pepper to taste"
+    ],
+    "steps": [
+      "Melt butter in a skillet over medium-high heat.",
+      "Add garlic and cook until fragrant, about 30 seconds.",
+      "Add shrimp in a single layer and cook 2 minutes per side until pink.",
+      "Stir in lemon juice and parsley.",
+      "Season and serve immediately with crusty bread."
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Chicken Quesadilla",
+    "image": "https://images.unsplash.com/photo-1618040996337-56904b7850b9?w=600&q=80",
+    "prep": "15 mins",
+    "description": "Crispy tortillas stuffed with melty cheese and seasoned chicken, sliced into wedges for easy sharing.",
+    "ingredients": [
+      "2 large flour tortillas",
+      "1 cup cooked, shredded chicken",
+      "1 cup shredded cheddar or Monterey Jack",
+      "1/2 cup diced bell pepper",
+      "1 tsp cumin",
+      "1 tbsp oil"
+    ],
+    "steps": [
+      "Toss the shredded chicken with cumin and bell pepper.",
+      "Heat oil in a large skillet over medium heat.",
+      "Place a tortilla in the pan, sprinkle half with cheese and chicken mixture, then fold over.",
+      "Cook 2-3 minutes per side until golden and the cheese melts.",
+      "Slice into wedges and serve with salsa or sour cream."
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Tomato Basil Soup",
+    "image": "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=600&q=80",
+    "prep": "20 mins",
+    "description": "A warm, velvety soup made from simmered tomatoes and fresh basil — comfort food in a bowl.",
+    "ingredients": [
+      "1 can (400g) crushed tomatoes",
+      "1 cup vegetable stock",
+      "1/2 cup cream",
+      "1/2 onion, chopped",
+      "2 cloves garlic, minced",
+      "Handful of fresh basil",
+      "1 tbsp olive oil"
+    ],
+    "steps": [
+      "Heat olive oil in a pot and sauté onion and garlic until soft.",
+      "Add crushed tomatoes and vegetable stock, then simmer for 10 minutes.",
+      "Blend until smooth using an immersion blender.",
+      "Stir in the cream and torn basil leaves.",
+      "Season to taste and serve warm."
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Spaghetti Aglio e Olio",
+    "image": "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=600&q=80",
+    "prep": "20 mins",
+    "description": "A humble Italian classic: spaghetti tossed in garlicky, chili-flecked olive oil with a touch of parsley.",
+    "ingredients": [
+      "300g spaghetti",
+      "6 cloves garlic, thinly sliced",
+      "1/2 cup olive oil",
+      "1 tsp chili flakes",
+      "Handful of chopped parsley",
+      "Salt to taste",
+      "Grated parmesan (optional)"
+    ],
+    "steps": [
+      "Cook spaghetti in salted boiling water until al dente. Reserve 1/2 cup pasta water.",
+      "While pasta cooks, gently heat olive oil with garlic and chili flakes until golden and fragrant.",
+      "Toss the drained spaghetti into the garlic oil, adding a splash of pasta water to loosen.",
+      "Stir in parsley and season with salt.",
+      "Top with parmesan if desired and serve immediately."
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Buddha Bowl",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&q=80",
+    "prep": "20 mins",
+    "description": "A vibrant, balanced bowl of grains, roasted veggies, and greens finished with a creamy tahini drizzle.",
+    "ingredients": [
+      "1 cup cooked quinoa",
+      "1 cup roasted sweet potato cubes",
+      "1 cup chickpeas",
+      "1 cup baby spinach",
+      "1/2 avocado, sliced",
+      "2 tbsp tahini",
+      "1 tbsp lemon juice"
+    ],
+    "steps": [
+      "Arrange quinoa, roasted sweet potato, chickpeas, and spinach in a bowl.",
+      "Top with sliced avocado.",
+      "Whisk together tahini and lemon juice with a splash of water until smooth.",
+      "Drizzle the dressing over the bowl.",
+      "Serve at room temperature or lightly chilled."
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Grilled Cheese Sandwich",
+    "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=600&q=80",
+    "prep": "10 mins",
+    "description": "Buttery, golden bread with a gooey, melty cheese center — the ultimate quick comfort food.",
+    "ingredients": [
+      "4 slices bread",
+      "4 slices cheddar cheese",
+      "2 tbsp butter, softened"
+    ],
+    "steps": [
+      "Butter one side of each bread slice.",
+      "Place two slices butter-side down in a pan, add cheese, and top with the remaining bread, butter-side up.",
+      "Cook over medium-low heat for 3-4 minutes per side until golden and the cheese melts.",
+      "Slice and serve hot."
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Beef Tacos",
+    "image": "https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?w=600&q=80",
+    "prep": "20 mins",
+    "description": "Seasoned ground beef piled into warm tortillas with fresh toppings — a weeknight favorite.",
+    "ingredients": [
+      "400g ground beef",
+      "8 small tortillas",
+      "1 packet taco seasoning (or homemade blend)",
+      "1 cup shredded lettuce",
+      "1/2 cup diced tomato",
+      "1/2 cup shredded cheese",
+      "Sour cream, to serve"
+    ],
+    "steps": [
+      "Brown the ground beef in a skillet over medium-high heat.",
+      "Add taco seasoning and a splash of water, simmer for 5 minutes.",
+      "Warm the tortillas in a dry pan or microwave.",
+      "Fill each tortilla with beef, lettuce, tomato, and cheese.",
+      "Top with sour cream and serve immediately."
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Fluffy Pancakes",
+    "image": "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=600&q=80",
+    "prep": "20 mins",
+    "description": "Soft, fluffy pancakes stacked high and finished with syrup — a weekend breakfast staple.",
+    "ingredients": [
+      "1 1/2 cups flour",
+      "3 1/2 tsp baking powder",
+      "1 tbsp sugar",
+      "1 1/4 cups milk",
+      "1 egg",
+      "3 tbsp melted butter",
+      "Maple syrup, to serve"
+    ],
+    "steps": [
+      "Whisk together flour, baking powder, and sugar in a bowl.",
+      "In a separate bowl, whisk milk, egg, and melted butter.",
+      "Combine wet and dry ingredients until just mixed (a few lumps are fine).",
+      "Pour batter onto a hot, lightly greased griddle and cook until bubbles form, then flip.",
+      "Cook until golden on both sides and serve with maple syrup."
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Hummus & Veggie Wrap",
+    "image": "https://images.unsplash.com/photo-1547496502-affa22d38842?w=600&q=80",
+    "prep": "10 mins",
+    "description": "A fresh, no-cook wrap loaded with creamy hummus and crunchy vegetables — perfect for a fast lunch.",
+    "ingredients": [
+      "2 large tortillas",
+      "1/2 cup hummus",
+      "1 cup shredded carrot",
+      "1 cup baby spinach",
+      "1/2 cucumber, julienned",
+      "1/4 red cabbage, shredded"
+    ],
+    "steps": [
+      "Spread a generous layer of hummus over each tortilla.",
+      "Layer the carrot, spinach, cucumber, and cabbage down the center.",
+      "Fold in the sides and roll up tightly.",
+      "Slice in half and serve immediately."
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Vegetable Fried Rice",
+    "image": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=600&q=80",
+    "prep": "15 mins",
+    "description": "A quick way to use up leftover rice, tossed with crisp vegetables, egg, and soy sauce.",
+    "ingredients": [
+      "3 cups cooked, cooled rice",
+      "2 eggs, beaten",
+      "1 cup mixed frozen vegetables",
+      "2 cloves garlic, minced",
+      "3 tbsp soy sauce",
+      "2 tbsp vegetable oil",
+      "2 spring onions, sliced"
+    ],
+    "steps": [
+      "Heat oil in a large pan or wok over high heat.",
+      "Add garlic and frozen vegetables, stir fry for 2-3 minutes.",
+      "Push to one side, pour in the eggs, and scramble until just set.",
+      "Add the rice and soy sauce, tossing everything together until heated through.",
+      "Garnish with spring onions and serve hot."
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Turkey Club Panini",
+    "image": "https://images.unsplash.com/photo-1481070555726-e2fe8357725c?w=600&q=80",
+    "prep": "12 mins",
+    "description": "A pressed sandwich with layers of turkey, cheese, and crisp bacon — hearty and satisfying.",
+    "ingredients": [
+      "4 slices sandwich bread",
+      "6 slices turkey breast",
+      "4 slices cheddar cheese",
+      "4 strips cooked bacon",
+      "2 tbsp mayonnaise",
+      "1 tbsp butter, softened"
+    ],
+    "steps": [
+      "Spread mayonnaise on one side of two bread slices.",
+      "Layer turkey, cheese, and bacon between the bread, mayo-side in.",
+      "Butter the outside of the sandwiches.",
+      "Grill in a panini press or skillet until golden and the cheese melts, about 4 minutes.",
+      "Slice diagonally and serve warm."
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Shakshuka",
+    "image": "https://images.unsplash.com/photo-1590412200988-a436970781fa?w=600&q=80",
+    "prep": "25 mins",
+    "description": "Eggs gently poached in a spiced tomato and pepper sauce — a one-pan Middle Eastern classic.",
+    "ingredients": [
+      "1 can (400g) crushed tomatoes",
+      "1 bell pepper, diced",
+      "1/2 onion, diced",
+      "2 cloves garlic, minced",
+      "1 tsp cumin",
+      "1 tsp paprika",
+      "4 eggs",
+      "Fresh parsley, to garnish"
+    ],
+    "steps": [
+      "Sauté onion and bell pepper in olive oil until softened.",
+      "Add garlic, cumin, and paprika, cooking for 1 minute until fragrant.",
+      "Pour in the crushed tomatoes and simmer for 8-10 minutes.",
+      "Make small wells in the sauce and crack an egg into each.",
+      "Cover and cook until the egg whites are set, about 5-6 minutes. Garnish with parsley."
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Berry Smoothie Bowl",
+    "image": "https://images.unsplash.com/photo-1511690656952-34342bb7c2f2?w=600&q=80",
+    "prep": "10 mins",
+    "description": "A thick, spoonable smoothie topped with fresh fruit and granola — breakfast that feels like dessert.",
+    "ingredients": [
+      "2 cups frozen mixed berries",
+      "1 banana",
+      "1/2 cup Greek yogurt",
+      "1/4 cup milk",
+      "Granola, to top",
+      "Fresh fruit, to top"
+    ],
+    "steps": [
+      "Blend the frozen berries, banana, yogurt, and milk until thick and smooth.",
+      "Pour into a bowl.",
+      "Top with granola and fresh fruit.",
+      "Serve immediately with a spoon."
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Quick Chickpea Curry",
+    "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&q=80",
+    "prep": "25 mins",
+    "description": "A warmly spiced, creamy curry made from pantry-staple chickpeas — comforting and fast enough for a weeknight.",
+    "ingredients": [
+      "2 cans (400g each) chickpeas, drained",
+      "1 can (400ml) coconut milk",
+      "1/2 onion, diced",
+      "2 cloves garlic, minced",
+      "1 tbsp curry powder",
+      "1 tsp turmeric",
+      "1 tbsp oil",
+      "Fresh cilantro, to garnish"
+    ],
+    "steps": [
+      "Heat oil in a pot and sauté onion until soft.",
+      "Add garlic, curry powder, and turmeric, cooking for 1 minute until fragrant.",
+      "Stir in chickpeas and coconut milk.",
+      "Simmer for 12-15 minutes until slightly thickened.",
+      "Garnish with fresh cilantro and serve over rice."
+    ]
+  }
+]
