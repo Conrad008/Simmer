@@ -66,7 +66,6 @@ export default function AddRecipeForm({ recipe = null, onSaved }) {
         };
 
         setError("");
-        setSuccess(true);
         
         try {
             if (isEditing) {
