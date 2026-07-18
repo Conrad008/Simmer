@@ -8,6 +8,7 @@ import Home from "./pages/Home"
 import FavouritePage from "./pages/FavouritePage"
 import MyRecipes from "./pages/Myrecipes"
 import RecipeDetail from "./pages/RecipeDetail"
+import Footer from "./components/Footer"
 
 function App() {
 
@@ -25,7 +26,9 @@ function App() {
         <Route path="/recipes" element={<Recipes />} />
         <Route path="/recipes/:id" element={<RecipeDetail />} />
       </Routes>
+
     </Router>
+    <Footer/>
     </>
   )
 }
