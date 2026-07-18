@@ -121,6 +121,49 @@ export default function RecipeDetail() {
                     <ArrowLeft className="h-4 w-4" />
                     Back
                 </button>
+                
+                <div className="overflow-hidden rounded-2xl border border-olive/10 bg-white shadow-sm dark:border-ivory/10 dark:bg-[#3A3E3C] dark:shadow-black/20">
+                   <div className="relative h-64 w-full overflow-hidden bg-obsidian/5 dark:bg-ivory/5 sm:h-80">
+                        {showImage ? (
+                            <img
+                                src={image}
+                                alt={name}
+                                onError={() => setImageFailed(true)}
+                                className="h-full w-full object-cover"
+                            />
+                        ) : (
+                            <div className="flex h-full w-full flex-col items-center justify-center gap-2">
+                                <ImageOff
+                                    className="h-9 w-9 text-obsidian/20 dark:text-ivory/20"
+                                    strokeWidth={1.5}
+                                />
+                                <span className="text-xs font-medium text-obsidian/30 dark:text-ivory/30">
+                                    No image
+                                </span>
+                            </div>
+                        )}
+                   </div>
+
+                    <div className="p-6 sm:p-8">
+                        <h1 className="font-serif text-2xl font-medium leading-snug text-obsidian dark:text-ivory sm:text-3xl">
+                            {name}
+                        </h1>
+                        <div className="mt-3 flex flex-wrap items-center gap-4 text-sm text-obsidian/60 dark:text-ivory/60">
+                            {prep && (
+                                <span className="flex items-center gap-1.5">
+                                    <Clock className="h-4 w-4 text-tomato" strokeWidth={2.5} />
+                                    {prep}
+                                </span>
+                            )}
+                            {isCustom && (
+                                <span className="flex items-center gap-1.5">
+                                    <ChefHat className="h-4 w-4 text-tomato" strokeWidth={2.5} />
+                                    Added by {createdByName || "a Simmer cook"}
+                                </span>
+                            )}
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     )
