@@ -40,7 +40,7 @@ export default function Landing() {
                             variant="outline"
                             className="w-full border-olive text-olive hover:bg-olive/10 hover:text-olive dark:border-[#A3B896] dark:text-[#A3B896] dark:hover:bg-olive/20 dark:hover:text-[#A3B896] sm:w-auto"
                         >
-                            <Link to="/register" className="flex items-center justify-center gap-2">
+                            <Link to="/home" className="flex items-center justify-center gap-2">
                                 Create your own Recipies
                             </Link>
                         </Button>
