@@ -442,5 +442,374 @@
       "Simmer for 12-15 minutes until slightly thickened.",
       "Garnish with fresh cilantro and serve over rice."
     ]
+  },
+  {
+    "id": 21,
+    "name": "Caesar Salad",
+    "image": "https://images.unsplash.com/photo-1550304943-4f24f54ddde9?w=600&q=80",
+    "prep": "15 mins",
+    "description": "Crisp romaine tossed in a tangy, garlicky dressing with parmesan and crunchy croutons.",
+    "ingredients": [
+      "1 head romaine lettuce, chopped",
+      "1/2 cup croutons",
+      "1/3 cup grated parmesan",
+      "3 tbsp Caesar dressing",
+      "Black pepper to taste"
+    ],
+    "steps": [
+      "Wash and chop the romaine lettuce.",
+      "Toss the lettuce with Caesar dressing until evenly coated.",
+      "Add croutons and half the parmesan, tossing gently.",
+      "Top with remaining parmesan and a crack of black pepper.",
+      "Serve immediately while the croutons are still crisp."
+    ]
+  },
+  {
+    "id": 22,
+    "name": "BLT Sandwich",
+    "image": "https://images.unsplash.com/photo-1619096252214-ef06c45683e3?w=600&q=80",
+    "prep": "10 mins",
+    "description": "The classic combo of crispy bacon, lettuce, and tomato between toasted bread with mayo.",
+    "ingredients": [
+      "4 slices bread, toasted",
+      "6 strips bacon",
+      "1 tomato, sliced",
+      "Lettuce leaves",
+      "2 tbsp mayonnaise"
+    ],
+    "steps": [
+      "Cook the bacon in a skillet until crisp, about 5-6 minutes.",
+      "Toast the bread slices.",
+      "Spread mayonnaise on each slice of toast.",
+      "Layer lettuce, tomato, and bacon between the slices.",
+      "Cut in half and serve immediately."
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Egg Fried Noodles",
+    "image": "https://images.unsplash.com/photo-1585238342024-78d387f4a707?w=600&q=80",
+    "prep": "15 mins",
+    "description": "Quick wok-fried noodles tossed with scrambled egg, soy sauce, and crisp vegetables.",
+    "ingredients": [
+      "300g egg noodles, cooked",
+      "2 eggs, beaten",
+      "1 cup shredded cabbage",
+      "1 carrot, julienned",
+      "3 tbsp soy sauce",
+      "2 tbsp vegetable oil",
+      "2 spring onions, sliced"
+    ],
+    "steps": [
+      "Heat oil in a wok over high heat and scramble the eggs, then set aside.",
+      "Add cabbage and carrot to the wok, stir frying for 2-3 minutes.",
+      "Add the cooked noodles and soy sauce, tossing to combine.",
+      "Return the scrambled egg to the wok and mix everything together.",
+      "Garnish with spring onions and serve hot."
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Bruschetta",
+    "image": "https://images.unsplash.com/photo-1572695157366-5e585ab2b69f?w=600&q=80",
+    "prep": "15 mins",
+    "description": "Toasted baguette slices topped with a fresh mix of tomato, basil, and garlic.",
+    "ingredients": [
+      "1 baguette, sliced",
+      "4 tomatoes, diced",
+      "2 cloves garlic",
+      "Handful of fresh basil, chopped",
+      "3 tbsp olive oil",
+      "Salt to taste"
+    ],
+    "steps": [
+      "Toast the baguette slices until golden.",
+      "Rub each slice with a cut clove of garlic while still warm.",
+      "Combine diced tomatoes, basil, olive oil, and salt in a bowl.",
+      "Spoon the tomato mixture generously onto each toasted slice.",
+      "Serve immediately."
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Tuna Melt",
+    "image": "https://images.unsplash.com/photo-1554433607-66b5efe9d304?w=600&q=80",
+    "prep": "12 mins",
+    "description": "A warm, open-faced sandwich of creamy tuna salad topped with melted cheese.",
+    "ingredients": [
+      "2 cans tuna, drained",
+      "3 tbsp mayonnaise",
+      "4 slices bread",
+      "4 slices cheddar cheese",
+      "1 tbsp diced celery (optional)",
+      "Salt and pepper to taste"
+    ],
+    "steps": [
+      "Mix the tuna with mayonnaise, celery, salt, and pepper.",
+      "Spread the tuna mixture evenly onto each slice of bread.",
+      "Top each slice with a slice of cheese.",
+      "Broil in the oven for 3-4 minutes until the cheese is melted and bubbly.",
+      "Serve warm."
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Vegetable Quesadilla",
+    "image": "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=600&q=80",
+    "prep": "15 mins",
+    "description": "Crispy tortillas filled with melted cheese and colorful sautéed vegetables.",
+    "ingredients": [
+      "2 large flour tortillas",
+      "1 cup shredded cheddar",
+      "1/2 cup diced bell pepper",
+      "1/2 cup corn kernels",
+      "1/4 cup diced onion",
+      "1 tbsp oil"
+    ],
+    "steps": [
+      "Sauté the bell pepper, corn, and onion in oil until softened, about 4 minutes.",
+      "Heat a separate skillet over medium heat.",
+      "Place a tortilla in the pan, sprinkle with cheese and the vegetable mixture, then fold over.",
+      "Cook 2-3 minutes per side until golden and the cheese melts.",
+      "Slice into wedges and serve with salsa."
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Miso Soup",
+    "image": "https://images.unsplash.com/photo-1607301406259-dfb186e15de8?w=600&q=80",
+    "prep": "15 mins",
+    "description": "A light, savory Japanese soup with tofu, seaweed, and a delicate miso broth.",
+    "ingredients": [
+      "4 cups dashi or vegetable stock",
+      "3 tbsp miso paste",
+      "1/2 cup cubed silken tofu",
+      "2 tbsp dried wakame seaweed",
+      "2 spring onions, sliced"
+    ],
+    "steps": [
+      "Heat the dashi or stock in a pot until warm but not boiling.",
+      "Whisk the miso paste with a ladle of warm stock until dissolved, then stir back into the pot.",
+      "Add the tofu and wakame, warming through for 2-3 minutes.",
+      "Avoid boiling once the miso is added, as it can dull the flavor.",
+      "Ladle into bowls and garnish with spring onions."
+    ]
+  },
+  {
+    "id": 28,
+    "name": "Falafel Wrap",
+    "image": "https://images.unsplash.com/photo-1593001872095-7d5b3868fb1d?w=600&q=80",
+    "prep": "20 mins",
+    "description": "Crispy falafel wrapped up with fresh salad and a creamy tahini sauce.",
+    "ingredients": [
+      "8 falafel balls (store-bought or homemade)",
+      "2 large flatbreads or pita",
+      "1 cup shredded lettuce",
+      "1 tomato, diced",
+      "3 tbsp tahini sauce",
+      "1/4 cup pickled vegetables (optional)"
+    ],
+    "steps": [
+      "Warm or fry the falafel according to package instructions, about 8-10 minutes.",
+      "Warm the flatbreads in a dry pan.",
+      "Layer lettuce, tomato, and falafel onto each flatbread.",
+      "Drizzle generously with tahini sauce.",
+      "Fold or roll up and serve immediately."
+    ]
+  },
+  {
+    "id": 29,
+    "name": "Caprese Pasta Salad",
+    "image": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=600&q=80",
+    "prep": "20 mins",
+    "description": "A cold pasta salad combining cherry tomatoes, mozzarella pearls, and basil in a light dressing.",
+    "ingredients": [
+      "300g pasta (fusilli or penne)",
+      "1 cup cherry tomatoes, halved",
+      "1 cup mozzarella pearls",
+      "Handful of fresh basil, torn",
+      "3 tbsp olive oil",
+      "1 tbsp balsamic vinegar",
+      "Salt and pepper to taste"
+    ],
+    "steps": [
+      "Cook the pasta according to package instructions, then drain and cool slightly.",
+      "Combine the pasta with cherry tomatoes, mozzarella, and basil in a large bowl.",
+      "Whisk together olive oil, balsamic vinegar, salt, and pepper.",
+      "Pour the dressing over the pasta salad and toss to coat.",
+      "Serve at room temperature or chilled."
+    ]
+  },
+  {
+    "id": 30,
+    "name": "Chicken Caesar Wrap",
+    "image": "https://images.unsplash.com/photo-1550317138-10000687a72b?w=600&q=80",
+    "prep": "15 mins",
+    "description": "Grilled chicken, crisp romaine, and Caesar dressing rolled up into a satisfying wrap.",
+    "ingredients": [
+      "2 large tortillas",
+      "1 cup cooked, sliced chicken breast",
+      "1 cup shredded romaine lettuce",
+      "1/4 cup grated parmesan",
+      "3 tbsp Caesar dressing"
+    ],
+    "steps": [
+      "Toss the romaine with Caesar dressing and parmesan in a bowl.",
+      "Warm the tortillas slightly in a dry pan.",
+      "Layer the chicken and dressed romaine mixture onto each tortilla.",
+      "Fold in the sides and roll up tightly.",
+      "Slice in half and serve immediately."
+    ]
+  },
+  {
+    "id": 31,
+    "name": "Baked Beans on Toast",
+    "image": "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=600&q=80",
+    "prep": "10 mins",
+    "description": "A simple, comforting classic — warm baked beans spooned over buttery toast.",
+    "ingredients": [
+      "1 can (400g) baked beans",
+      "4 slices bread",
+      "2 tbsp butter",
+      "Grated cheese, to top (optional)"
+    ],
+    "steps": [
+      "Heat the baked beans in a small pot over medium heat until warmed through.",
+      "Toast the bread slices until golden.",
+      "Butter the toast generously.",
+      "Spoon the warm beans over the toast.",
+      "Top with grated cheese if desired and serve immediately."
+    ]
+  },
+  {
+    "id": 32,
+    "name": "Peanut Butter Banana Toast",
+    "image": "https://images.unsplash.com/photo-1584263347416-85a696b4eda7?w=600&q=80",
+    "prep": "5 mins",
+    "description": "A quick, energizing snack of creamy peanut butter and sliced banana on warm toast.",
+    "ingredients": [
+      "2 slices bread",
+      "3 tbsp peanut butter",
+      "1 banana, sliced",
+      "Drizzle of honey (optional)",
+      "Pinch of cinnamon (optional)"
+    ],
+    "steps": [
+      "Toast the bread slices until golden.",
+      "Spread peanut butter evenly over each slice.",
+      "Arrange banana slices on top.",
+      "Drizzle with honey and dust with cinnamon if desired.",
+      "Serve immediately."
+    ]
+  },
+  {
+    "id": 33,
+    "name": "Cobb Salad",
+    "image": "https://images.unsplash.com/photo-1512852939750-1305098529bf?w=600&q=80",
+    "prep": "20 mins",
+    "description": "A hearty composed salad with chicken, egg, bacon, avocado, and blue cheese in neat rows.",
+    "ingredients": [
+      "2 cups chopped lettuce",
+      "1 cup cooked, diced chicken",
+      "2 hard-boiled eggs, sliced",
+      "4 strips bacon, cooked and crumbled",
+      "1 avocado, sliced",
+      "1/4 cup crumbled blue cheese",
+      "3 tbsp vinaigrette dressing"
+    ],
+    "steps": [
+      "Arrange the lettuce as a bed on a large plate or bowl.",
+      "Arrange chicken, egg, bacon, avocado, and blue cheese in rows on top.",
+      "Drizzle with vinaigrette dressing just before serving.",
+      "Toss together at the table, or serve composed for presentation."
+    ]
+  },
+  {
+    "id": 36,
+    "name": "Margherita Panini",
+    "image": "https://images.unsplash.com/photo-1528137871618-79d2761e3fd5?w=600&q=80",
+    "prep": "12 mins",
+    "description": "A pressed sandwich version of the classic Margherita, with melty mozzarella and fresh basil.",
+    "ingredients": [
+      "4 slices ciabatta or sandwich bread",
+      "150g fresh mozzarella, sliced",
+      "1 tomato, sliced",
+      "Handful of fresh basil leaves",
+      "2 tbsp olive oil"
+    ],
+    "steps": [
+      "Layer mozzarella, tomato, and basil between two slices of bread.",
+      "Brush the outside of the sandwiches with olive oil.",
+      "Grill in a panini press or skillet until golden and the cheese melts, about 4 minutes.",
+      "Slice in half and serve warm."
+    ]
+  },
+  {
+    "id": 37,
+    "name": "Sweetcorn Fritters",
+    "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=600&q=80",
+    "prep": "20 mins",
+    "description": "Crispy, golden fritters packed with sweet corn kernels — great as a snack or light meal.",
+    "ingredients": [
+      "2 cups corn kernels",
+      "1/2 cup flour",
+      "2 eggs",
+      "2 spring onions, sliced",
+      "1/4 cup oil, for frying",
+      "Salt and pepper to taste"
+    ],
+    "steps": [
+      "Combine the corn, flour, eggs, spring onions, salt, and pepper in a bowl.",
+      "Heat oil in a skillet over medium heat.",
+      "Spoon the batter into the pan in small rounds.",
+      "Fry for 2-3 minutes per side until golden and crisp.",
+      "Drain on paper towel and serve warm."
+    ]
+  },
+  {
+    "id": 39,
+    "name": "Quick Chili con Carne",
+    "image": "https://images.unsplash.com/photo-1608835291093-394b0c943a75?w=600&q=80",
+    "prep": "25 mins",
+    "description": "A hearty, spiced ground beef and bean chili, ready well before dinnertime rush.",
+    "ingredients": [
+      "400g ground beef",
+      "1 can (400g) kidney beans, drained",
+      "1 can (400g) crushed tomatoes",
+      "1/2 onion, diced",
+      "2 cloves garlic, minced",
+      "1 tbsp chili powder",
+      "1 tsp cumin"
+    ],
+    "steps": [
+      "Brown the ground beef in a large pot over medium-high heat.",
+      "Add onion and garlic, cooking until softened, about 3 minutes.",
+      "Stir in chili powder and cumin, cooking for 1 minute until fragrant.",
+      "Add the crushed tomatoes and kidney beans, and simmer for 15 minutes.",
+      "Season to taste and serve hot, with rice or bread."
+    ]
+  },
+  {
+    "id": 40,
+    "name": "Shrimp Tacos",
+    "image": "https://images.unsplash.com/photo-1615870216519-2f9fa575fa5c?w=600&q=80",
+    "prep": "20 mins",
+    "description": "Zesty, spiced shrimp tucked into warm tortillas with a crisp cabbage slaw.",
+    "ingredients": [
+      "400g shrimp, peeled and deveined",
+      "1 tsp chili powder",
+      "1 tsp cumin",
+      "8 small tortillas",
+      "1 cup shredded cabbage",
+      "1/4 cup sour cream",
+      "1 lime, juiced"
+    ],
+    "steps": [
+      "Toss the shrimp with chili powder and cumin.",
+      "Cook the shrimp in a hot skillet for 2 minutes per side until pink and cooked through.",
+      "Warm the tortillas in a dry pan or microwave.",
+      "Mix the shredded cabbage with sour cream and a squeeze of lime juice.",
+      "Fill each tortilla with shrimp and slaw, then serve with extra lime."
+    ]
   }
 ]
