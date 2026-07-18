@@ -43,7 +43,47 @@ export default function Footer() {
                         community.
                     </p>
                 </div>
+
+                <div>
+                    <h3 className="text-xs font-semibold uppercase tracking-widest text-obsidian/40 dark:text-ivory/40">
+                        Quick Links
+                    </h3>
+                    <ul className="mt-4 space-y-2.5">
+                        {quickLinks.map(({ to, label }) => (
+                            <li key={to}>
+                                <Link
+                                    to={to}
+                                    className="text-sm text-obsidian/70 transition-colors hover:text-tomato dark:text-ivory/70"
+                                >
+                                    {label}
+                                </Link>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 className="text-xs font-semibold uppercase tracking-widest text-obsidian/40 dark:text-ivory/40">
+                        Follow Us
+                    </h3>
+                    <div className="mt-4 flex items-center gap-3">
+                        {socialLinks.map(({ label, href, icon: Icon }) => (
+                            <a
+                                key={label}
+                                href={href}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label={label}
+                                className="flex h-9 w-9 items-center justify-center rounded-full border border-olive/20 text-obsidian/70 transition-colors hover:border-tomato hover:text-tomato dark:border-ivory/20 dark:text-ivory/70"
+                            >
+                                <Icon className="h-4 w-4" />
+                            </a>
+                        ))}
+                    </div>
+                </div>
             </div>
+
+            
         </div>
     </footer>
 }
