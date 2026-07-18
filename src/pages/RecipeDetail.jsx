@@ -68,4 +68,12 @@ export default function RecipeDetail() {
         };
     }, [id]);
 
+    if (loading) {
+        return (
+            <div className="flex min-h-screen flex-col items-center justify-center gap-3 bg-ivory text-obsidian/60 dark:bg-obsidian dark:text-ivory/60">
+                <Loader2 className="h-7 w-7 animate-spin text-tomato" />
+                <p className="text-sm">Loading recipe...</p>
+            </div>
+        );
+    }
 }
