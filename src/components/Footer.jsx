@@ -25,3 +25,25 @@ const socialLinks = [
   { label: "Instagram", href: "https://www.instagram.com/simmer", icon: Instagram },
   { label: "X", href: "https://www.x.com/simmer", icon: XIcon },
 ];
+
+export default function Footer() {
+    <footer className="border-t border-olive/10 bg-ivory dark:border-ivory/10 dark:bg-obsidian">
+        <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-14 lg:px-8">
+            <div className="grid grid-cols-1 gap-10 sm:grid-cols-3">
+                <div>
+                    <Link to="/" className="flex items-center gap-2">
+                        <ChefHat className="h-6 w-6 text-tomato" strokeWidth={2} />
+                        <span className="font-serif text-xl font-semibold tracking-tight text-obsidian dark:text-ivory">
+                          Simmer
+                        </span>
+                    </Link>
+                    <p className="mt-3 max-w-xs text-sm leading-relaxed text-obsidian/60 dark:text-ivory/60">
+                        &copy;2026 Simmer. All rights reserved.
+                        Discover recipes, save your favorites, and share your own creations with the
+                        community.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+}
