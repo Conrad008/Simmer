@@ -21,7 +21,7 @@ const XIcon = (props) => (
 );
 
 const socialLinks = [
-  { label: "TikTok", href: "https://www.tiktok.com/@simmer", icon: TikTokIcon },
+  { label: "TikTok", href: "https://www.tiktok.com/@simmer", icon: tikTokIcon },
   { label: "Instagram", href: "https://www.instagram.com/simmer", icon: Instagram },
   { label: "X", href: "https://www.x.com/simmer", icon: XIcon },
 ];
@@ -38,7 +38,6 @@ export default function Footer() {
                         </span>
                     </Link>
                     <p className="mt-3 max-w-xs text-sm leading-relaxed text-obsidian/60 dark:text-ivory/60">
-                        &copy;2026 Simmer. All rights reserved.
                         Discover recipes, save your favorites, and share your own creations with the
                         community.
                     </p>
@@ -83,7 +82,25 @@ export default function Footer() {
                 </div>
             </div>
 
-            
+            <div className="mt-10 flex flex-col items-center gap-3 border-t border-olive/10 pt-6 text-center dark:border-ivory/10 sm:flex-row sm:justify-between sm:text-left">
+                <p className="text-sm text-obsidian/60 dark:text-ivory/60">
+                    &copy; 2026 Simmer. Crafted with soul.
+                </p>
+                <div className="flex gap-6">
+                    <a
+                        href="#"
+                        className="text-sm text-obsidian/60 underline-offset-4 hover:text-tomato hover:underline dark:text-ivory/60"
+                    >
+                        Privacy Policy
+                    </a>
+                    <a
+                        href="#"
+                        className="text-sm text-obsidian/60 underline-offset-4 hover:text-tomato hover:underline dark:text-ivory/60"
+                    >
+                        Help Center
+                    </a>
+                </div>
+            </div>
         </div>
     </footer>
 }
