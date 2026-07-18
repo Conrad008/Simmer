@@ -14,4 +14,58 @@ export default function RecipeDetail() {
     const [error, setError] = useState("");
     const [imageFailed, setImageFailed] = useState(false);
 
+    useEffect(() => {
+        let isMounted = true;
+
+        const loadRecipe = async () => {
+            setLoading(true);
+            setError("");
+            setNotFound(false);
+            setImageFailed(false);
+
+            try {
+                const snap = await getDoc(doc(db, "recipes", id));
+
+                if (snap.exists()) {
+                    if (isMounted) {
+                        setRecipe({ id: snap.id, ...snap.data() });
+                    }
+                    return;
+                }
+
+
+                const res = await fetch("/recipes/recipes.json");
+
+                if (!res.ok) {
+                    throw new Error(`Failed to fetch recipes (status ${res.status})`);
+                }
+
+                const data = await res.json();
+                const found = data.find((r) => String(r.id) === String(id));
+
+                if (isMounted) {
+                    if (found) {
+                        setRecipe(found);
+                    } else {
+                        setNotFound(true);
+                    }
+                }
+            } catch (err) {
+                if (isMounted) {
+                    setError("We couldn't load this recipe right now. Please try again.");
+                }
+            } finally {
+                if (isMounted) {
+                    setLoading(false);
+                }
+            }
+        };
+
+        loadRecipe();
+
+        return () => {
+            isMounted = false;
+        };
+    }, [id]);
+
 }
