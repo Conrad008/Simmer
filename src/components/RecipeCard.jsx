@@ -21,7 +21,7 @@ const getStoredFavorites = () => {
 
 export default function RecipeCard({ recipe }) {
     const { user } = useAuth()
-    const { id, name, image, prep, isCustom } = recipe;
+    const { id, name, image, prep, isCustom, createdBy } = recipe;
 
     const isOwner = isCustom && user?.uid && createdBy === user.uid;
 
