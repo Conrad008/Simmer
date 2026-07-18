@@ -121,9 +121,9 @@ export default function RecipeDetail() {
                     <ArrowLeft className="h-4 w-4" />
                     Back
                 </button>
-                
+
                 <div className="overflow-hidden rounded-2xl border border-olive/10 bg-white shadow-sm dark:border-ivory/10 dark:bg-[#3A3E3C] dark:shadow-black/20">
-                   <div className="relative h-64 w-full overflow-hidden bg-obsidian/5 dark:bg-ivory/5 sm:h-80">
+                    <div className="relative h-64 w-full overflow-hidden bg-obsidian/5 dark:bg-ivory/5 sm:h-80">
                         {showImage ? (
                             <img
                                 src={image}
@@ -142,7 +142,7 @@ export default function RecipeDetail() {
                                 </span>
                             </div>
                         )}
-                   </div>
+                    </div>
 
                     <div className="p-6 sm:p-8">
                         <h1 className="font-serif text-2xl font-medium leading-snug text-obsidian dark:text-ivory sm:text-3xl">
@@ -162,6 +162,53 @@ export default function RecipeDetail() {
                                 </span>
                             )}
                         </div>
+
+                        {description && (
+                            <p className="mt-4 text-sm leading-relaxed text-obsidian/70 dark:text-ivory/70 sm:text-base">
+                                {description}
+                            </p>
+                        )}
+
+                        {ingredients?.length > 0 && (
+                            <div className="mt-8 border-t border-olive/10 pt-6 dark:border-ivory/10">
+                                <h2 className="flex items-center gap-2 font-serif text-xl font-medium text-obsidian dark:text-ivory">
+                                    <UtensilsCrossed className="h-5 w-5 text-tomato" />
+                                    Ingredients
+                                </h2>
+                                <ul className="mt-4 space-y-2.5">
+                                    {ingredients.map((ingredient, i) => (
+                                        <li
+                                            key={i}
+                                            className="flex items-start gap-3 text-sm leading-relaxed text-obsidian/80 dark:text-ivory/80 sm:text-base"
+                                        >
+                                            <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-tomato" />
+                                            {ingredient}
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        )}
+
+                        {steps?.length > 0 && (
+                            <div className="mt-8 border-t border-olive/10 pt-6 dark:border-ivory/10">
+                                <h2 className="flex items-center gap-2 font-serif text-xl font-medium text-obsidian dark:text-ivory">
+                                    <ListChecks className="h-5 w-5 text-tomato" />
+                                    Steps
+                                </h2>
+                                <ol className="mt-4 space-y-4">
+                                    {steps.map((step, i) => (
+                                        <li key={i} className="flex items-start gap-4">
+                                            <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-tomato/10 text-sm font-semibold text-tomato">
+                                                {i + 1}
+                                            </span>
+                                            <p className="pt-0.5 text-sm leading-relaxed text-obsidian/80 dark:text-ivory/80 sm:text-base">
+                                                {step}
+                                            </p>
+                                        </li>
+                                    ))}
+                                </ol>
+                            </div>
+                        )}
                     </div>
                 </div>
             </div>
