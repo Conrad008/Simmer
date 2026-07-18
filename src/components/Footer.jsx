@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ChefHat, Instagram } from "lucide-react";
+import { ChefHat } from "lucide-react";
 
 const quickLinks = [
     { to: "/home", label: "Home" },
@@ -22,7 +22,7 @@ const XIcon = (props) => (
 
 const socialLinks = [
   { label: "TikTok", href: "https://www.tiktok.com/@simmer", icon: tikTokIcon },
-  { label: "Instagram", href: "https://www.instagram.com/simmer", icon: Instagram },
+//   { label: "Instagram", href: "https://www.instagram.com/simmer", icon: Instagram },
   { label: "X", href: "https://www.x.com/simmer", icon: XIcon },
 ];
 
