@@ -107,4 +107,21 @@ export default function RecipeDetail() {
             </div>
         );
     }
+
+    const { name, image, prep, description, ingredients, steps, isCustom, createdByName } = recipe;
+    const showImage = image && !imageFailed;
+
+    return (
+        <div className="min-h-screen bg-ivory dark:bg-obsidian">
+            <div clasName="mx-auto max-w-3xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+                <button
+                    onClick={() => navigate(-1)}
+                    className="mb-6 flex items-center gap-2 text-sm font-medium text-obsidian/70 transition-colors hover:text-obsidian dark:text-ivory/70 dark:hover:text-ivory"
+                >
+                    <ArrowLeft className="h-4 w-4" />
+                    Back
+                </button>
+            </div>
+        </div>
+    )
 }
