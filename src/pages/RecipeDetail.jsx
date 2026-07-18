@@ -76,4 +76,26 @@ export default function RecipeDetail() {
             </div>
         );
     }
+
+    if (notFound) {
+        return (
+            <div className="flex min-h-screen flex-col items-center justify-center gap-4 bg-ivory px-6 text-center dark:bg-obsidian">
+                <AlertCircle className="h-8 w-8 text-obsidian/30 dark:text-ivory/30" />
+                <div>
+                    <h1 className="font-serif text-xl font-medium text-obsidian dark:text-ivory">
+                        Recipe not found
+                    </h1>
+                    <p className="mt-1 text-sm text-obsidian/60 dark:text-ivory/60">
+                        This recipe may have been removed or the link is incorrect.
+                    </p>
+                </div>
+                <button
+                    onClick={() => navigate("/recipes")}
+                    className="text-sm font-semibold text-tomato hover:underline"
+                >
+                    Back to Recipes
+                </button>
+            </div>
+        );
+    }
 }
