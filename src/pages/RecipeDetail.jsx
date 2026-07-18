@@ -98,4 +98,13 @@ export default function RecipeDetail() {
             </div>
         );
     }
+
+    if (error) {
+        return (
+            <div className="flex min-h-screen flex-col items-center justify-center gap-3 bg-ivory px-6 text-center dark:bg-obsidian">
+                <AlertCircle className="h-7 w-7 text-red-500" />
+                <p className="text-sm text-red-600 dark:text-red-400">{error}</p>
+            </div>
+        );
+    }
 }
