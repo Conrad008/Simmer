@@ -46,7 +46,7 @@ export default function RecipeList({ favoritesOnly = false, customOnly = false }
                 let mockRecipes = [];
                 if (!customOnly) {
 
-                    const res = await fetch("/recipes.json");
+                    const res = await fetch("/recipes/recipes.json");
 
                     if (!res.ok) {
                         throw new Error(`Failed to fetch recipes (status ${res.status})`);
