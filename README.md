@@ -180,7 +180,7 @@ Installation
    
 ```bash
    git clone https://github.com/Conrad008/Simmer.git
-   cd BakeBox
+   cd Simmer
 ```
 
 2. **Open the project:**
