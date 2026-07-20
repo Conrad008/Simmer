@@ -43,7 +43,7 @@ export default function AddRecipeForm({ recipe = null, onSaved }) {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        if (!form.name || !form.prep || !form.description || !form.ingredients || !form.steps || !form.image) {
+        if (!form.name || !form.prep || !form.description || !form.ingredients || !form.steps ) {
             setError("Please fill in every field before saving your recipe.");
             setSuccess(false);
             return;
